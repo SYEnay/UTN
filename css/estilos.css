@@ -1,0 +1,184 @@
+/*  INICIALIZACION  */
+*{
+    font-size: 62.5%;/*Inicializo la letra para que cambie en diferentes dispositivos*/
+    font-family: 'Rubik', sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;/*  Este codigo arregla algunos problemas con los paddings*/
+}
+body {
+    box-sizing: border-box;background:#099c62; /*Le da un pequeno margen al contenido*/
+}
+
+h1{
+    font-size: 3rem;
+    color: rgb(8, 155, 97);
+}
+h2{
+    font-size: 2.6rem;
+}
+h3{
+    font-size: 2.3rem;
+}
+p {font-size: 1.8rem;}
+a {
+    font-size: 2rem;
+}
+a:hover{opacity:0.6;transition:1s}
+/*  UTILIDADES  */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/*  HEADER  */
+.logo{
+    height:  13rem;
+    position: absolute;
+    margin:0rem 0 0rem 8rem;
+}
+/*Animacion de Logo*/
+.logo {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+@keyframes slidein {
+    from {
+        margin-left: 0;
+        transform: rotate(-360deg);
+    }
+
+    to {
+        margin-left: 8rem;
+    }
+}
+.parteArriba{
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    align-items: center;
+    background-color: white;
+    padding-top:2rem;
+}
+.parteArriba h1{
+	margin-top:0.5rem;
+	margin-bottom:2rem;
+    text-align: center;
+}
+
+.parteAbajo{
+    display: flex;
+    align-items: center;
+    background-color: #2A272A;
+    padding-left: 20rem;
+    box-sizing: border-box;
+    box-shadow:0px 14px 20px -8px black;
+    
+}
+.parteAbajo a{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+.carrusel{position:absolute;z-index:-1;margin-bottom:2rem;height:70rem;}
+.carrusel a{padding-top:10rem;}
+.carrusel img{
+    padding-top: 10rem;
+    width: 100%;
+    margin: auto;
+    height:100%;
+}
+.manuales,.tuto,.pdf{margin-bottom:8rem;width:100%;position:absolute;z-index:-1;height:39rem;margin-top:65rem; background-image:url("back.png");}
+            h2{background-color:#8F269F;border-radius:1rem;color:#fff;width:40%;height:3.5rem;text-align:center; 
+                margin-left:2rem;margin-bottom:1.5rem;margin-top:1.5rem;padding:.2rem}
+            .caja{display:flex;width:100%;height:26rem;}
+                .caja a{width:32%;height:100%;margin-left:1.25rem;text-decoration:none;color:#fff;border-radius:2rem;color:#fff;background-position:center;
+                    background-repeat:no-repeat;background-size:cover;}
+                    .uno{box-shadow:0px 3px 4px #3B0096;background-image:url(Office365.jpg);}
+                    .dos{box-shadow:0px 3px 4px #3B0096;background-image:url(prof.jpg);}
+                    .tres{box-shadow:0px 3px 4px #3B0096;background-image:url(tuto.gif);}
+                    .cuno,.cdos,.ctres,.ccuatro{background-image: radial-gradient(circle, #d5d5d5, #a8a8a8, #7c7c7c, #545454, #2e2e2e); background-image:url("pdo.png");box-shadow:0px 3px 4px #3B0096;}
+                .caja a p{text-shadow:0px 3px 4px black; width:100%; padding:0.5rem; text-align:center;background:rgb(8, 155, 97);border-radius:1rem;margin:auto;margin-top:23rem;box-shadow:0px 3px 4px #3B0096; }
+    footer{background:#2A272A;text-align:center;width:100%;position:absolute;z-index:-1;height:40.4rem;margin-top:104rem;color:#fff;}
+                        h4{font-size:1.8rem;margin-top:2rem}
+                        h5{font-size:1.5rem}
+                        h6{font-size:1.3rem;}
+        .redes{text-align:center;position:relative;width:60%;margin:auto;margin-top:3rem}
+            .Redes{width:100%;height:5rem;display:flex;margin:auto;}
+                    em{font-size:1.3rem}
+                .Redes>a,.Redes>nav,em{color:#fff;width:20%;height:100%;text-align:center;}
+                .Redes em{text-align:left;margin-top:.5rem}
+                .Redes a i{font-size:5rem;}
+                .Redes nav i{font-size:4.9rem}
+                    .Redes>a:hover i,.Redes nav i:hover{color:#6264A7;transition:1s}      
+        .fin{width:80%;display:flex;margin-bottom:1rem;margin:auto;margin-top:2rem}
+            .fin>a,span{width:22%;margin:auto;}
+            .fin img{width:180px;margin-right:.5rem;border-radius:12px;}
+            .fin img:hover{transform: rotate(-360deg);transition:4s}
+            .fin>a,span{text-decoration:none;color:#fff;transition:1s;
+                    font-size:20px;padding-top:2rem;text-align:center;}
+                    .fin a:hover,span:hover{color:#6264A7;opacity:1;}
+                    .lag{padding:1rem; padding-bottom:4rem; text-align:center;background:#099c62;width:96%; text-shadow:0px 3px 4px black;box-shadow:0px 3px 4px #3B0096; }
+		/*Animaciones NO TOCAR O TU MAMA C MUERE :v*/
+
+		 h2{
+			
+			animation-duration: 2.5s;
+			animation-name: mover;
+
+		}
+
+		@keyframes mover{
+			from{
+				margin-left: -100rem;
+				color:transparent;
+			}
+			to{
+				margin-left: 2rem;
+			}
+		}
+	   .uno,.dos,.tres{
+      animation-name: movers;
+      animation-duration: 2.2s;
+    }
+
+    @keyframes movers{
+      from{
+
+        height:0%;
+
+      }
+      to{
+
+        height:100%;
+
+      }
+    }
+
+		 p{
+			
+			animation-duration: 3s;
+			animation-name: movera;
+
+		}
+
+		@keyframes movera{
+			from{
+				margin-top: 100rem;
+				color:transparent;
+			}
+			to{
+				
+			}
+		}
+
+
+
+/*z-index: 
+/*z-index: sirve para dar posición a un elemento atrás (-1) o enfrente (1) de otro*/
